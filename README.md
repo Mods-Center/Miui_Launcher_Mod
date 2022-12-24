@@ -2,18 +2,22 @@
  
 ![Picsart_22-12-14_07-47-34-971](https://telegra.ph/file/72c57aba7fc39d95a1e27.png)
 
-MIUI Launcher App modified by [Kashi](https://t.me/kakashi1v1) with many features unlocked.
+MIUI Launcher App modified by [Kashi](https://t.me/kakashi1v1) with many features added and ui changes.
 Its installation is via Magisk on MIUI 12-13 based ROMs with Android 10 or higher.
 
 **Changelog:**
-• Download and flash the zip in magisk
-• Reboot the device
-• Uninstall updates of launcher (if there is)
-• Now Enjoy
+• New user interface
+• Changes in user interface
+• Implemented more functions
+• Can choose between iOS and Default for recent tasks
+• Folder size unlocked for versions lower than MIUI 14
+• Monet enabled
 
-For issues or questions you can send a message in [Telegram](https://t.me/bootloop_discussion) group.
-
-Note - Miui 14 Cn users need to install core patch lsposed and extract apk to install, Eu users can flash the module simply
+**Notes**
+• Tested on Global/Cn/Eu ROMs based on MIUI 13 - Android 12
+• Miui 14 Cn users need to install core patch lsposed and extract apk to install, Eu users can flash the module simply
+• If you use this Launcher on your custom rom don't forget to give credits for the effort
+• For issues or questions you can send a message in [Telegram](https://t.me/bootloop_discussion) group.
 
 ### Download ###
 Download from [releases page](https://github.com/Mods-Center/Miui_Launcher_Mod/releases)
