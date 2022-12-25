@@ -12,6 +12,9 @@ Its installation is via Magisk on MIUI 12-13 based ROMs with Android 10 or highe
 • Can choose between iOS and Default for recent tasks
 • Folder size unlocked for versions lower than MIUI 14
 • Monet enabled
+• Fixed loading screen for lots of users
+• Blur folder bug fix and rounded folder for roms below than A12
+• More ...........
 
 **Notes**
 • Tested on Global/Cn/Eu ROMs based on MIUI 13 - Android 12
