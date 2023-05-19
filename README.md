@@ -23,7 +23,7 @@ MIUI Launcher App modified by [Kashi](https://t.me/kakashi1v1) with many feature
 - Tested on Global/Cn/Eu ROMs based on MIUI 13 - Android 12
 - Miui 14 Cn users need to install core patch lsposed and extract apk to install, Eu users can flash the module simply
 - If you use this Launcher on your custom rom don't forget to give credits for the effort
-- For issues or questions you can send a message in [Telegram](https://t.me/bootloop_discussion) group.
+- For issues or questions you can send a message in [Telegram](https://t.me/amogus_discussion) group.
 
 ### Download
 - Download from [releases page](https://github.com/Mods-Center/Miui_Launcher_Mod/releases)
@@ -93,6 +93,8 @@ git pull
 ![photo_2022-12-16_21-10-49](https://telegra.ph/file/ae49add564eba33723a62.png)
 ![photo_2022-12-16_21-10-45](https://telegra.ph/file/a151a94a9b55e23725a20.png)
 
-
+| Download Mods | Total |
+| --- | --- |
+| GitHub Releases | ![GitHub all releases](https://img.shields.io/github/downloads/Mods-Center/Miui_Launcher_Mod/total?logo=GitHub&style=for-the-badge&color=blue) |
 
 
