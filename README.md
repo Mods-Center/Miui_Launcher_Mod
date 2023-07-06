@@ -1,5 +1,5 @@
 # Modded MIUI Launcher
- 
+
 ![Picsart_22-12-14_07-47-34-971](https://telegra.ph/file/479d8c1d24c2b5f2c7168.png)
 
 MIUI Launcher App modified by [Kashi](https://t.me/kakashi1v1) with added features and UI changes.
