@@ -28,5 +28,6 @@
 	<permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
         <permission name="android.permission.ACCESS_THEME"/>
         <permission name="android.permission.BROADCAST_CLOSE_SYSTEM_DIALOGS"/>
+                <permission name="android.permission.READ_MEDIA_IMAGES"/>
     </privapp-permissions>
 </permissions>
