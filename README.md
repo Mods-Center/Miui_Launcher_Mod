@@ -2,32 +2,30 @@
  
 ![Picsart_22-12-14_07-47-34-971](https://telegra.ph/file/479d8c1d24c2b5f2c7168.png)
 
-MIUI Launcher App modified by [Kashi](https://t.me/kakashi1v1) with many features added and ui changes.
+MIUI Launcher App modified by [Kashi](https://t.me/kakashi1v1) with added features and UI changes.
 
 ### Prerequisites
-- Device rooted by [Magisk latest stable](https://github.com/topjohnwu/Magisk/releases/latest).
-- MIUI 13-14 based ROMs with Android 12 or higher
+- Rooted device using [Magisk latest stable](https://github.com/topjohnwu/Magisk/releases/latest).
+- MIUI 13-14 based ROMs with Android 11 or higher.
 
 ### Changelog
-• New ui interface 
-• Added several new mods
-• Fixed all bugs noticed in previous update 
-• If you use in your rom, please don't forget to put a credit for our work
-
-### Not for Paid Rom Shit
+- New UI interface.
+- Added several new modifications.
+- Fixed all bugs noticed in the previous update.
 
 ### Notes
-- Tested on Global/Cn/Eu ROMs based on MIUI 13 - Android 12
-- Miui 14 Cn users need to install core patch lsposed and extract apk to install, Eu users can flash the module simply
-- If you use this Launcher on your custom rom don't forget to give credits for the effort
-- For issues or questions you can send a message in [Telegram](https://t.me/amogus_discussion) group.
+- Tested on Global/CN/EU ROMs based on MIUI 13 - Android 12 and higher.
+- Users with Global/CN ROMs based on Android 13 are required to disable signature verification, and it is recommended to use Core Patch LSPosed module.
+- If you use this in your ROM, please remember to credit our work.
+- Not for paid ROMs.
+- For issues or questions, you can send a message to the [Telegram](https://t.me/amogus_discussion) group.
 
 ### Download
-- Download from [releases page](https://github.com/Mods-Center/Miui_Launcher_Mod/releases)
+- Download from the [releases page](https://github.com/Mods-Center/Miui_Launcher_Mod/releases)
 
 ### Instructions
-- Download zip and flash in Magisk
-- Reboot your device
+- Download the zip file and flash it in Magisk.
+- Reboot your device.
 - Enjoy!
 
 ## Building from source
