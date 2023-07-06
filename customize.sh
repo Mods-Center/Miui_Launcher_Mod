@@ -13,78 +13,112 @@ REPLACE="
 /system/product/priv-app/MiLauncherGlobal
 /system/product/priv-app/MiuiHome
 /system/product/priv-app/MIUIHome
+/system/product/priv-app/MiuiHomeT
+/system/product/priv-app/MIUIHomeT
 /system/product/priv-app/MiuiLauncherGlobal
 /system/product/priv-app/MIUILauncherGlobal
 "
 
-SKIPUNZIP=1
-SKIPMOUNT=false
-
 install_files() {
-    . $MODPATH/addon/install.sh
-
-ui_print " "
-ui_print " Warning: Miui 14 CN is not supported, read module post to know about installation."
-ui_print " "
-ui_print " "
-ui_print "Let's start"
-ui_print "Choose your Miui Version:"
-ui_print "  Vol+ = Miui 13 or lower"
-ui_print "  Vol- = Miui 14 Android 13 Xiaomi.eu based"
+ui_print " READ!!! "
+ui_print " Signature verification must be disabled"
+ui_print " mandatory for MIUI 14 users based on" 
+ui_print " Android 13; otherwise, the module will"
+ui_print " not work. "
 ui_print " "
 
-if chooseport; then
-    ui_print "- Miui 13 or lower selected"
+Android=`getprop ro.build.version.release`
+
+if [ $Android = 11 ]; then
+    ui_print " "
+    ui_print " Android 11 detected"
+    ui_print " "
     cp -rf $MODPATH/files/launcher/MiuiHome.apk $MODPATH/system/priv-app/aMiuiHome
-else
-{
-    ui_print "- Miui 14 Eu selected"
+elif [ $Android = 12 ]; then
+    ui_print " "
+	ui_print " Android 12 detected"
+    ui_print " "
+    cp -rf $MODPATH/files/launcher/MiuiHome.apk $MODPATH/system/priv-app/aMiuiHome
+    set_monet
+elif [ $Android = 13 ]; then
+    ui_print " "
+	ui_print " Android 13 detected"
+    ui_print " "
     cp -rf $MODPATH/files/launcher/MiuiHome.apk $MODPATH/system/product/priv-app/aMiuiHome
-}
-
-fi
-    ui_print " "
-    ui_print " Is your device POCO?"
-    ui_print "  Vol+ = Yes"
-    ui_print "  Vol- = No"
-    ui_print " "
-
-if chooseport; then
-    ui_print "- Deleting POCO Launcher and adding MiuiHome support."
-    cp -rf $MODPATH/files/poco/Framework_resoverlay.apk $MODPATH/system/product/overlay
+    set_monet
 else
-{
-    ui_print "- Skipping..."
-}
-
+    ui_print " Version not supported"
+    ui_print " Exiting..."
+    exit
 fi
 
+ui_print "- Launcher updates will be uninstalled..."
+    pm uninstall-system-updates com.miui.home
+
+TMPAPKDIR=/data/local/tmp
+cp -rf $MODPATH/files/launcher/MiuiHome.apk $TMPAPKDIR
+result=$(pm install ${TMPAPKDIR}/MiuiHome.apk 2>&1)
+
+if [ $result = Success ]; then
+    ui_print " "
+    ui_print " Signature verification disablement detected"
+    ui_print " proceeding to install as an update."
+    ui_print " Installed successfully."
+    ui_print " "
+else
+    ui_print " "
+    ui_print " Signature verification disablement not detected"
+    ui_print " proceeding with normal installation."
+    ui_print " Reboot is needed."
+    ui_print " "
+fi
+
+}
+
+set_monet() {
+    . $MODPATH/addon/install.sh
+ui_print " Do you want Monet colors?"
+ui_print " "
+ui_print "  Vol+ = Yes"
+ui_print "  Vol- = No"
+ui_print " "
+if chooseport; then
+    ui_print "- Monet added"
+    ui_print " "
+    cp -rf $MODPATH/files/MonetMiuiHome.apk $MODPATH/system/product/overlay
+else
+    ui_print "- Skipping"
+    ui_print " "
+fi
+}
+
+set_permissions() {
+    su -c pm grant com.miui.home android.permission.READ_MEDIA_IMAGES
+    set_perm_recursive  $MODPATH  0  0  0755  0644
 }
 
 cleanup() {
 	rm -rf $MODPATH/addon 2>/dev/null
 	rm -rf $MODPATH/files 2>/dev/null
 	rm -f $MODPATH/install.sh 2>/dev/null
-	ui_print "- Deleting package cache files"
+	ui_print "  - Deleting package cache files"
     rm -rf /data/resource-cache/*
     rm -rf /data/system/package_cache/*
     rm -rf /cache/*
     rm -rf /data/dalvik-cache/*
-    ui_print "- Launcher updates will be uninstalled..."
-    pm uninstall-system-updates com.miui.home
-    ui_print "- Deleting old module (if it is installed)"
+    ui_print "  - Deleting old module (if it is installed)"
     touch /data/adb/modules/miui_launcher_mod/remove
 }
 
 run_install() {
-	ui_print " "
 	unzip -o "$ZIPFILE" -x 'META-INF/*' -d $MODPATH >&2
 	ui_print " "
-	ui_print "- Installing files"
+	ui_print " Installing files"
 	install_files
+	set_permissions
 	sleep 1
 	ui_print " "
-	ui_print "- Cleaning up"
+	ui_print " Cleaning up"
 	ui_print " "
 	cleanup
 	sleep 1

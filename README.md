@@ -1,23 +1,20 @@
 # Modded MIUI Launcher
  
-![Picsart_22-12-14_07-47-34-971](https://telegra.ph/file/72c57aba7fc39d95a1e27.png)
+![Picsart_22-12-14_07-47-34-971](https://telegra.ph/file/479d8c1d24c2b5f2c7168.png)
 
 MIUI Launcher App modified by [Kashi](https://t.me/kakashi1v1) with many features added and ui changes.
 
 ### Prerequisites
 - Device rooted by [Magisk latest stable](https://github.com/topjohnwu/Magisk/releases/latest).
-- MIUI 12-13 based ROMs with Android 10 or higher
+- MIUI 13-14 based ROMs with Android 10 or higher
 
 ### Changelog
-- New user interface
-- Changes in user interface
-- Implemented more functions
-- Can choose between iOS and Default for recent tasks
-- Folder size unlocked for versions lower than MIUI 14
-- Monet enabled
-- Fixed loading screen for lots of users
-- Blur folder bug fix and rounded folder for roms below than A12
-- More ...........
+• New ui interface 
+• Added several new mods
+• Fixed all bugs noticed in previous update 
+• If you use in your rom, please don't forget to put a credit for our work
+
+### 𝕹𝖔𝖙 𝖋𝖔𝖗 𝕻𝖆𝖎𝖉 𝕽𝖔𝖒 𝕾𝖍𝖎𝖙
 
 ### Notes
 - Tested on Global/Cn/Eu ROMs based on MIUI 13 - Android 12
@@ -86,12 +83,12 @@ git pull
 ```
 
 ### Screenshots ###
-![photo_2022-12-16_21-10-41](https://telegra.ph/file/171a778ecc6d9ecb0d92a.png)
-![photo_2022-12-16_21-10-37](https://telegra.ph/file/83ab4240b157089f7ac9c.png)
-![photo_2022-12-16_21-10-31](https://telegra.ph/file/a7eeca73de1fc547fd5b5.png)
-![photo_2022-12-16_21-10-53](https://telegra.ph/file/4747a85c7f22a5c0f76dd.png)
-![photo_2022-12-16_21-10-49](https://telegra.ph/file/ae49add564eba33723a62.png)
-![photo_2022-12-16_21-10-45](https://telegra.ph/file/a151a94a9b55e23725a20.png)
+![photo_2022-12-16_21-10-41](https://telegra.ph/file/f3785e7c0a9635e1cdfd7.png)
+![photo_2022-12-16_21-10-37](https://telegra.ph/file/a1aad969d4acfc91b349f.png)
+![photo_2022-12-16_21-10-31](https://telegra.ph/file/3437550f579f607362b24.png)
+![photo_2022-12-16_21-10-53](https://telegra.ph/file/c94b2230c329bc8ed9ccc.png)
+![photo_2022-12-16_21-10-49](https://telegra.ph/file/49c03d4f92af0e105022e.png)
+![photo_2022-12-16_21-10-45](https://telegra.ph/file/e4a55ea339eb6249efbb7.png)
 
 | Download Mods | Total |
 | --- | --- |
