@@ -11,6 +11,7 @@ MIUI Launcher App modified by [Kashi](https://t.me/kakashi1v1) with added featur
 ### Changelog
 - New UI interface.
 - Added several new modifications.
+- Based on CN launcher.
 - Fixed all bugs noticed in the previous update.
 
 ### Notes
