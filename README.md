@@ -15,21 +15,21 @@
 > [!WARNING]
 > **Legacy MIUI project. No longer updated.** It's kept for MIUI 13–14 users. HyperOS users: see [HyperOS Launcher Mod](https://github.com/Mods-Center/HyperOS-Launcher).
 
-## ✨ Features
+## Features
 - New UI
 - Many extra options
 - Based on the CN launcher, tested on Global/CN/EU ROMs
 
-## 📋 Requirements
+## Requirements
 - MIUI 13–14, Android 11 or newer
 - Magisk
 
-## 📥 Installation
+## Installation
 1. Download the latest zip from [**Releases**](https://github.com/Mods-Center/Miui_Launcher_Mod/releases/latest).
 2. Flash it in Magisk.
 3. Reboot your device.
 
-## ⚠️ Notes
+## Notes
 - Android 13 Global/CN ROMs: Signature verification must be disabled. Flash [Apk Protection Patch](https://github.com/Mods-Center/Apk-Protection-Patch) or [Apk Signature Verification Patch](https://github.com/Mods-Center/Apk-Signature-Verification-Patch) first, or use the Core Patch LSPosed module.
 - If you use this in your ROM, please credit Mods Center. Not for paid ROMs.
 
@@ -40,7 +40,7 @@ cd Miui_Launcher_Mod
 bash autobuild.sh   # run `git pull` later to update
 ```
 
-## 📸 Screenshots
+## Screenshots
 <p align="center">
   <img src="https://telegra.ph/file/f3785e7c0a9635e1cdfd7.png" width="23%" alt="MIUI Launcher"/>
   <img src="https://telegra.ph/file/a1aad969d4acfc91b349f.png" width="23%" alt="MIUI Launcher"/>
@@ -55,8 +55,8 @@ bash autobuild.sh   # run `git pull` later to update
 
 <div align="center">
 
-Made by **[Kashi](https://t.me/kakashi1v1)** · part of **[Mods Center](https://github.com/Mods-Center)**
+Made by **[🅺🅰🆂🅷🅸](https://t.me/kakashi1v1)** · part of **[Mods Center](https://github.com/Mods-Center)**
 
-[📢 Channel](https://t.me/kashis_cringey_stuffs) · [💬 Support group](https://t.me/bootloop_discussion) · [🐞 Report a bug](https://github.com/Mods-Center/Miui_Launcher_Mod/issues)
+[Channel](https://t.me/kashis_cringey_stuffs) · [Support group](https://t.me/bootloop_discussion) · [Report a bug](https://github.com/Mods-Center/Miui_Launcher_Mod/issues)
 
 </div>
