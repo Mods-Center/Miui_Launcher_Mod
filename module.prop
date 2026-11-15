@@ -1,6 +1,7 @@
 id=miui_launcher_mod
 name=MIUI14 Launcher Mod V3 by Mods Center
 version=V3 Final
-versionCode=39
+versionCode=31
 author=🅺🅰🆂🅷🅸
 description=Join channel @kashis_cringey_stuffs for more mods
+updateJson=https://raw.githubusercontent.com/Mods-Center/Miui_Launcher_Mod/main/update.json
