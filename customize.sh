@@ -127,3 +127,9 @@ run_install() {
 }
 
 run_install
+
+# --- Mods Center: KernelSU/APatch mount metamodule check ---
+[ -f "$MODPATH/kashi_mount_check.sh" ] || unzip -qjo "$ZIPFILE" "kashi_mount_check.sh" -d "$MODPATH" >/dev/null 2>&1
+[ -f "$MODPATH/service.sh" ] || unzip -qjo "$ZIPFILE" "service.sh" -d "$MODPATH" >/dev/null 2>&1
+chmod 0755 "$MODPATH/service.sh" 2>/dev/null
+[ -f "$MODPATH/kashi_mount_check.sh" ] && . "$MODPATH/kashi_mount_check.sh" && kashi_install_check
